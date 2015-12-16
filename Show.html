@@ -1,0 +1,5 @@
+<f:widget.paginate objects="{myObjects}" as="paginatedObjects" configuration="{addQueryStringMethod: 'GET'}">
+	<f:for each="{paginatedObjects}" as="article">
+		<f:render partial="Model/Partial" arguments="{_all}" />
+	</f:for>
+</f:widget.paginate>
